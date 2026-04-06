@@ -1,6 +1,13 @@
 ## Hi there, I'm Pham Quy Truong (QyTruong)
 - I'm third-year student
-- I have a passion for software developememnt
+- I have a passion for software developmemnt (web/game)
+
+## Skills
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" width="20"/> Unity  
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="20"/> C#  
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="20"/> Python  
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="20"/> C++  
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="20"/> Java  
 
 <!--
 **QyTruong/QyTruong** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
