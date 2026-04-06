@@ -1,4 +1,6 @@
-## Hi there 👋
+## Hi there, I'm Pham Quy Truong (QyTruong)
+- I'm third-year student
+- I have a passion for software developememnt
 
 <!--
 **QyTruong/QyTruong** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
