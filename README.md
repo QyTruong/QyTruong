@@ -1,13 +1,13 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/QyTruong/QyTruong/main/assets/header.svg" width="800">
+<img src="https://github.com/QyTruong/QyTruong/blob/main/assets/header.svg?raw=true" width="800">
 
-<img src="https://raw.githubusercontent.com/QyTruong/QyTruong/main/assets/about.svg" width="800">
+<img src="https://github.com/QyTruong/QyTruong/blob/main/assets/about.svg?raw=true" width="800">
 
-<img src="https://raw.githubusercontent.com/QyTruong/QyTruong/main/assets/skills.svg" width="800">
+<img src="https://github.com/QyTruong/QyTruong/blob/main/assets/skills.svg?raw=true" width="800">
 
-<img src="https://raw.githubusercontent.com/QyTruong/QyTruong/main/assets/gh-stats.svg" width="800">
+<img src="https://github.com/QyTruong/QyTruong/blob/main/assets/gh-stats.svg?raw=true" width="800">
 
-<img src="https://raw.githubusercontent.com/QyTruong/QyTruong/main/assets/footer.svg" width="800">
+<img src="https://github.com/QyTruong/QyTruong/blob/main/assets/footer.svg?raw=true" width="800">
 
 </div>
