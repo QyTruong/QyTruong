@@ -1,0 +1,665 @@
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="800"
+        height="300"
+        viewBox="0 0 800 300"
+      >
+        <style>
+      @keyframes auStatsReveal {
+        0%, 10% {
+          opacity: 0;
+          transform: translateY(8px);
+        }
+  
+        22%, 82% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+  
+        95%, 100% {
+          opacity: 0;
+          transform: translateY(-5px);
+        }
+      }
+  
+      @keyframes auStatsLeaf {
+        0% {
+          transform: translateY(-30px) rotate(0deg);
+          opacity: 0;
+        }
+  
+        15% {
+          opacity: 0.8;
+        }
+  
+        55% {
+          transform: translateY(135px) translateX(24px) rotate(180deg);
+        }
+  
+        100% {
+          transform: translateY(330px) translateX(-25px) rotate(360deg);
+          opacity: 0;
+        }
+      }
+  
+      @keyframes auStatsSun {
+        0%, 100% {
+          opacity: 0.42;
+        }
+  
+        50% {
+          opacity: 0.7;
+        }
+      }
+  
+      .au-stats-sun {
+        animation:
+          auStatsSun
+          15s
+          ease-in-out
+          infinite;
+      }
+  
+      .au-stats-leaf {
+        animation:
+          auStatsLeaf
+          19s
+          linear
+          infinite;
+      }
+  
+      
+        .au-stats-title,
+        .au-stats-handle,
+        .au-stat-card,
+        .au-stats-language,
+        .au-stats-legend,
+        .au-stats-total {
+          animation:
+            auStatsReveal
+            15s
+            ease-out
+            infinite;
+        }
+  
+        .au-stat-card-0 {
+            animation-delay: 1.20s;
+          }
+.au-stat-card-1 {
+            animation-delay: 1.80s;
+          }
+.au-stat-card-2 {
+            animation-delay: 2.40s;
+          }
+.au-stat-card-3 {
+            animation-delay: 3.00s;
+          }
+  
+        .au-stats-language {
+          animation-delay: 4.20s;
+        }
+  
+        .au-stats-legend {
+          animation-delay: 4.80s;
+        }
+  
+        .au-stats-total {
+          animation-delay: 5.70s;
+        }
+      
+    </style>
+  
+        <defs>
+          <linearGradient id="auStatsSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#BFE3F2"/>
+            <stop offset="60%" stop-color="#F4D9BB"/>
+            <stop offset="100%" stop-color="#F2B17F"/>
+          </linearGradient>
+  
+          <radialGradient id="auStatsSun">
+            <stop offset="0%" stop-color="#FFF0B0" stop-opacity="0.9"/>
+            <stop offset="50%" stop-color="#FFD27A" stop-opacity="0.45"/>
+            <stop offset="100%" stop-color="#FFD27A" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+  
+        <rect width="800" height="300" fill="url(#auStatsSky)"/>
+  
+        <!-- sunlight -->
+        <circle
+          class="au-stats-sun"
+          cx="682"
+          cy="50"
+          r="105"
+          fill="url(#auStatsSun)"
+        />
+  
+        <circle
+          cx="682"
+          cy="50"
+          r="24"
+          fill="#FFF0B0"
+          opacity="0.48"
+        />
+  
+        <!-- pastel mountain background -->
+        <path
+          d="
+            M 0 220
+            Q 100 175 180 211
+            Q 280 160 375 211
+            Q 470 164 565 209
+            Q 680 165 800 208
+            L 800 300
+            L 0 300 Z
+          "
+          fill="#D9A18A"
+          opacity="0.48"
+        />
+  
+        <path
+          d="
+            M 0 242
+            Q 100 202 205 238
+            Q 310 192 420 238
+            Q 540 196 650 237
+            Q 730 210 800 231
+            L 800 300
+            L 0 300 Z
+          "
+          fill="#BE8173"
+          opacity="0.3"
+        />
+  
+        <!-- small momiji -->
+        <g class="au-stats-leaf">
+          
+      <g
+        transform="
+          translate(110 -5)
+          rotate(-20)
+          scale(0.55)
+        "
+        opacity="0.82"
+      >
+        <path
+          d="
+            M 0 -17
+            L 5 -9
+            L 13 -12
+            L 9 -3
+            L 18 0
+            L 9 4
+            L 13 12
+            L 5 9
+            L 2 20
+            L 0 11
+            L -2 20
+            L -5 9
+            L -13 12
+            L -9 4
+            L -18 0
+            L -9 -3
+            L -13 -12
+            L -5 -9
+            Z
+          "
+          fill="#D94F45"
+        />
+      </g>
+    
+        </g>
+  
+        <g
+          class="au-stats-leaf"
+          style="animation-delay: -2.5s;"
+        >
+          
+      <g
+        transform="
+          translate(610 -30)
+          rotate(25)
+          scale(0.7)
+        "
+        opacity="0.72"
+      >
+        <path
+          d="
+            M 0 -17
+            L 5 -9
+            L 13 -12
+            L 9 -3
+            L 18 0
+            L 9 4
+            L 13 12
+            L 5 9
+            L 2 20
+            L 0 11
+            L -2 20
+            L -5 9
+            L -13 12
+            L -9 4
+            L -18 0
+            L -9 -3
+            L -13 -12
+            L -5 -9
+            Z
+          "
+          fill="#E9783D"
+        />
+      </g>
+    
+        </g>
+  
+        <g
+          class="au-stats-leaf"
+          style="animation-delay: -5s;"
+        >
+          
+      <g
+        transform="
+          translate(750 10)
+          rotate(-10)
+          scale(0.46)
+        "
+        opacity="0.8"
+      >
+        <path
+          d="
+            M 0 -17
+            L 5 -9
+            L 13 -12
+            L 9 -3
+            L 18 0
+            L 9 4
+            L 13 12
+            L 5 9
+            L 2 20
+            L 0 11
+            L -2 20
+            L -5 9
+            L -13 12
+            L -9 4
+            L -18 0
+            L -9 -3
+            L -13 -12
+            L -5 -9
+            Z
+          "
+          fill="#F2B84B"
+        />
+      </g>
+    
+        </g>
+  
+        <!-- heading -->
+        <g class="au-stats-title">
+          <circle
+            cx="53"
+            cy="51"
+            r="4"
+            fill="#D96B3B"
+          />
+  
+          <text
+            x="66"
+            y="56"
+            fill="#D96B3B"
+            font-family="Georgia, 'Times New Roman', serif"
+            font-size="12"
+            letter-spacing="3.5"
+          >AUTUMN GITHUB JOURNAL</text>
+        </g>
+  
+        <text
+          class="au-stats-handle"
+          x="752"
+          y="56"
+          text-anchor="end"
+          fill="#765D5A"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="10"
+          letter-spacing="1.2"
+        >@GITHUB-USER</text>
+  
+        <rect
+          x="48"
+          y="69"
+          width="704"
+          height="1"
+          fill="#D96B3B"
+          opacity="0.28"
+        />
+  
+        <!-- stat cards -->
+        
+          <g class="au-stat-card au-stat-card-0">
+            <rect
+              x="48"
+              y="88"
+              width="162"
+              height="88"
+              rx="12"
+              fill="#FFF0B0"
+              fill-opacity="0.18"
+              stroke="#D96B3B"
+              stroke-opacity="0.18"
+            />
+  
+            <circle
+              cx="66"
+              cy="108"
+              r="4"
+              fill="#D96B3B"
+            />
+  
+            <text
+              x="62"
+              y="136"
+              fill="#fff1dc"
+              font-family="Georgia, 'Times New Roman', serif"
+              font-size="25"
+              font-weight="700"
+            >—</text>
+  
+            <text
+              x="63"
+              y="153"
+              fill="#D96B3B"
+              font-family="Georgia, 'Times New Roman', serif"
+              font-size="9"
+              letter-spacing="1.5"
+            >REPOS</text>
+  
+            <text
+              x="63"
+              y="166"
+              fill="#765D5A"
+              font-family="Georgia, 'Times New Roman', serif"
+              font-size="7"
+              letter-spacing="0.7"
+            >LOAD GITHUB</text>
+          </g>
+        
+
+          <g class="au-stat-card au-stat-card-1">
+            <rect
+              x="228"
+              y="88"
+              width="162"
+              height="88"
+              rx="12"
+              fill="#FFF0B0"
+              fill-opacity="0.18"
+              stroke="#D96B3B"
+              stroke-opacity="0.18"
+            />
+  
+            <circle
+              cx="246"
+              cy="108"
+              r="4"
+              fill="#D96B3B"
+            />
+  
+            <text
+              x="242"
+              y="136"
+              fill="#fff1dc"
+              font-family="Georgia, 'Times New Roman', serif"
+              font-size="25"
+              font-weight="700"
+            >—</text>
+  
+            <text
+              x="243"
+              y="153"
+              fill="#D96B3B"
+              font-family="Georgia, 'Times New Roman', serif"
+              font-size="9"
+              letter-spacing="1.5"
+            >COMMITS</text>
+  
+            <text
+              x="243"
+              y="166"
+              fill="#765D5A"
+              font-family="Georgia, 'Times New Roman', serif"
+              font-size="7"
+              letter-spacing="0.7"
+            >THIS YEAR</text>
+          </g>
+        
+
+          <g class="au-stat-card au-stat-card-2">
+            <rect
+              x="408"
+              y="88"
+              width="162"
+              height="88"
+              rx="12"
+              fill="#FFF0B0"
+              fill-opacity="0.18"
+              stroke="#D96B3B"
+              stroke-opacity="0.18"
+            />
+  
+            <circle
+              cx="426"
+              cy="108"
+              r="4"
+              fill="#D96B3B"
+            />
+  
+            <text
+              x="422"
+              y="136"
+              fill="#fff1dc"
+              font-family="Georgia, 'Times New Roman', serif"
+              font-size="25"
+              font-weight="700"
+            >—</text>
+  
+            <text
+              x="423"
+              y="153"
+              fill="#D96B3B"
+              font-family="Georgia, 'Times New Roman', serif"
+              font-size="9"
+              letter-spacing="1.5"
+            >PRS</text>
+  
+            <text
+              x="423"
+              y="166"
+              fill="#765D5A"
+              font-family="Georgia, 'Times New Roman', serif"
+              font-size="7"
+              letter-spacing="0.7"
+            >AUTHORED</text>
+          </g>
+        
+
+          <g class="au-stat-card au-stat-card-3">
+            <rect
+              x="588"
+              y="88"
+              width="162"
+              height="88"
+              rx="12"
+              fill="#FFF0B0"
+              fill-opacity="0.18"
+              stroke="#D96B3B"
+              stroke-opacity="0.18"
+            />
+  
+            <circle
+              cx="606"
+              cy="108"
+              r="4"
+              fill="#D96B3B"
+            />
+  
+            <text
+              x="602"
+              y="136"
+              fill="#fff1dc"
+              font-family="Georgia, 'Times New Roman', serif"
+              font-size="25"
+              font-weight="700"
+            >—</text>
+  
+            <text
+              x="603"
+              y="153"
+              fill="#D96B3B"
+              font-family="Georgia, 'Times New Roman', serif"
+              font-size="9"
+              letter-spacing="1.5"
+            >REVIEWS</text>
+  
+            <text
+              x="603"
+              y="166"
+              fill="#765D5A"
+              font-family="Georgia, 'Times New Roman', serif"
+              font-size="7"
+              letter-spacing="0.7"
+            >THIS YEAR</text>
+          </g>
+        
+  
+        <!-- languages -->
+        <text
+          class="au-stats-language"
+          x="48"
+          y="198"
+          fill="#765D5A"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="9"
+          letter-spacing="2"
+        >LANGUAGE LANDSCAPE</text>
+  
+        <g class="au-stats-language">
+          <rect x="48" y="210" width="704" height="10" rx="5" fill="#D96B3B" fill-opacity="0.18"/>
+        </g>
+  
+        <g class="au-stats-legend">
+          
+          <g>
+            <rect
+              x="48"
+              y="230"
+              width="8"
+              height="8"
+              rx="2"
+              fill="#765D5A"
+            />
+  
+            <text
+              x="61"
+              y="238"
+              fill="#fff1dc"
+              font-family="Georgia, 'Times New Roman', serif"
+              font-size="10"
+            >load github</text>
+          </g>
+        
+        </g>
+  
+        <!-- total -->
+        <g class="au-stats-total">
+          <text
+            x="400"
+            y="274"
+            text-anchor="middle"
+            font-family="Georgia, 'Times New Roman', serif"
+          >
+            <tspan
+              fill="#fff1dc"
+              font-size="16"
+              font-weight="700"
+            >—</tspan>
+  
+            <tspan
+              fill="#765D5A"
+              font-size="11"
+              letter-spacing="1"
+            > contributions in the past year</tspan>
+          </text>
+        </g>
+  
+        <!-- foreground leaves -->
+        
+      <g
+        transform="
+          translate(25 280)
+          rotate(-25)
+          scale(0.4)
+        "
+        opacity="0.65"
+      >
+        <path
+          d="
+            M 0 -17
+            L 5 -9
+            L 13 -12
+            L 9 -3
+            L 18 0
+            L 9 4
+            L 13 12
+            L 5 9
+            L 2 20
+            L 0 11
+            L -2 20
+            L -5 9
+            L -13 12
+            L -9 4
+            L -18 0
+            L -9 -3
+            L -13 -12
+            L -5 -9
+            Z
+          "
+          fill="#E9783D"
+        />
+      </g>
+    
+        
+      <g
+        transform="
+          translate(775 282)
+          rotate(30)
+          scale(0.45)
+        "
+        opacity="0.6"
+      >
+        <path
+          d="
+            M 0 -17
+            L 5 -9
+            L 13 -12
+            L 9 -3
+            L 18 0
+            L 9 4
+            L 13 12
+            L 5 9
+            L 2 20
+            L 0 11
+            L -2 20
+            L -5 9
+            L -13 12
+            L -9 4
+            L -18 0
+            L -9 -3
+            L -13 -12
+            L -5 -9
+            Z
+          "
+          fill="#D94F45"
+        />
+      </g>
+    
+      </svg>
+    

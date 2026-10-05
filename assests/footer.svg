@@ -1,0 +1,502 @@
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="800"
+        height="200"
+        viewBox="0 0 800 200"
+      >
+        <style>
+      @keyframes auFooterLeaf {
+        0% {
+          transform: translateY(-45px) translateX(0) rotate(0deg);
+          opacity: 0;
+        }
+  
+        15% {
+          opacity: 0.9;
+        }
+  
+        50% {
+          transform: translateY(85px) translateX(20px) rotate(170deg);
+        }
+  
+        85% {
+          opacity: 0.75;
+        }
+  
+        100% {
+          transform: translateY(230px) translateX(-28px) rotate(350deg);
+          opacity: 0;
+        }
+      }
+  
+      @keyframes auFooterReveal {
+        0%, 12% {
+          opacity: 0;
+          transform: translateY(8px);
+        }
+  
+        25%, 82% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+  
+        95%, 100% {
+          opacity: 0;
+          transform: translateY(-5px);
+        }
+      }
+  
+      @keyframes auFooterGlow {
+        0%, 100% {
+          opacity: 0.4;
+        }
+  
+        50% {
+          opacity: 0.72;
+        }
+      }
+  
+      .au-footer-leaf {
+        animation:
+          auFooterLeaf
+          20s
+          linear
+          infinite;
+      }
+  
+      .au-footer-sun {
+        animation:
+          auFooterGlow
+          15s
+          ease-in-out
+          infinite;
+      }
+  
+      
+        .au-footer-divider,
+        .au-footer-eyebrow,
+        .au-footer-name,
+        .au-footer-socials,
+        .au-footer-credit {
+          animation:
+            auFooterReveal
+            15s
+            ease-out
+            infinite;
+        }
+  
+        .au-footer-name {
+          animation-delay: 1.20s;
+        }
+  
+        .au-footer-socials {
+          animation-delay: 2.40s;
+        }
+  
+        .au-footer-credit {
+          animation-delay: 3.60s;
+        }
+      
+    </style>
+  
+        <defs>
+          <linearGradient id="auFooterSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#BFE3F2"/>
+            <stop offset="60%" stop-color="#F4D9BB"/>
+            <stop offset="100%" stop-color="#F2B17F"/>
+          </linearGradient>
+  
+          <radialGradient id="auFooterSun">
+            <stop offset="0%" stop-color="#FFF0B0" stop-opacity="0.95"/>
+            <stop offset="45%" stop-color="#FFD27A" stop-opacity="0.5"/>
+            <stop offset="100%" stop-color="#FFD27A" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+  
+        <rect width="800" height="200" fill="url(#auFooterSky)"/>
+  
+        <!-- warm sun -->
+        <circle
+          class="au-footer-sun"
+          cx="400"
+          cy="18"
+          r="105"
+          fill="url(#auFooterSun)"
+        />
+  
+        <!-- distant mountains -->
+        <path
+          d="
+            M 0 148
+            Q 90 110 175 142
+            Q 270 92 360 143
+            Q 460 94 555 142
+            Q 660 98 800 142
+            L 800 200
+            L 0 200 Z
+          "
+          fill="#D9A18A"
+          opacity="0.5"
+        />
+  
+        <path
+          d="
+            M 0 170
+            Q 110 130 220 164
+            Q 330 122 450 164
+            Q 580 125 690 162
+            Q 750 143 800 158
+            L 800 200
+            L 0 200 Z
+          "
+          fill="#BE8173"
+          opacity="0.32"
+        />
+  
+        
+      <g
+        transform="
+          translate(74 42)
+          rotate(-20)
+          scale(0.65)
+        "
+        opacity="0.85"
+      >
+        <path
+          d="
+            M 0 -18
+            L 5 -10
+            L 14 -13
+            L 10 -4
+            L 19 0
+            L 10 4
+            L 14 13
+            L 5 10
+            L 2 21
+            L 0 11
+            L -2 21
+            L -5 10
+            L -14 13
+            L -10 4
+            L -19 0
+            L -10 -4
+            L -14 -13
+            L -5 -10
+            Z
+          "
+          fill="#D94F45"
+        />
+  
+        <path
+          d="M 0 -11 L 0 14 M 0 -3 L -8 -8 M 0 -3 L 8 -8"
+          stroke="#9F3D38"
+          stroke-width="1"
+          fill="none"
+          opacity="0.5"
+        />
+      </g>
+    
+
+      <g
+        transform="
+          translate(116 118)
+          rotate(28)
+          scale(0.48)
+        "
+        opacity="0.8"
+      >
+        <path
+          d="
+            M 0 -18
+            L 5 -10
+            L 14 -13
+            L 10 -4
+            L 19 0
+            L 10 4
+            L 14 13
+            L 5 10
+            L 2 21
+            L 0 11
+            L -2 21
+            L -5 10
+            L -14 13
+            L -10 4
+            L -19 0
+            L -10 -4
+            L -14 -13
+            L -5 -10
+            Z
+          "
+          fill="#E9783D"
+        />
+  
+        <path
+          d="M 0 -11 L 0 14 M 0 -3 L -8 -8 M 0 -3 L 8 -8"
+          stroke="#9F3D38"
+          stroke-width="1"
+          fill="none"
+          opacity="0.5"
+        />
+      </g>
+    
+
+      <g
+        transform="
+          translate(710 46)
+          rotate(18)
+          scale(0.55)
+        "
+        opacity="0.85"
+      >
+        <path
+          d="
+            M 0 -18
+            L 5 -10
+            L 14 -13
+            L 10 -4
+            L 19 0
+            L 10 4
+            L 14 13
+            L 5 10
+            L 2 21
+            L 0 11
+            L -2 21
+            L -5 10
+            L -14 13
+            L -10 4
+            L -19 0
+            L -10 -4
+            L -14 -13
+            L -5 -10
+            Z
+          "
+          fill="#F2B84B"
+        />
+  
+        <path
+          d="M 0 -11 L 0 14 M 0 -3 L -8 -8 M 0 -3 L 8 -8"
+          stroke="#C98B28"
+          stroke-width="1"
+          fill="none"
+          opacity="0.5"
+        />
+      </g>
+    
+
+      <g
+        transform="
+          translate(755 122)
+          rotate(-35)
+          scale(0.62)
+        "
+        opacity="0.75"
+      >
+        <path
+          d="
+            M 0 -18
+            L 5 -10
+            L 14 -13
+            L 10 -4
+            L 19 0
+            L 10 4
+            L 14 13
+            L 5 10
+            L 2 21
+            L 0 11
+            L -2 21
+            L -5 10
+            L -14 13
+            L -10 4
+            L -19 0
+            L -10 -4
+            L -14 -13
+            L -5 -10
+            Z
+          "
+          fill="#D94F45"
+        />
+  
+        <path
+          d="M 0 -11 L 0 14 M 0 -3 L -8 -8 M 0 -3 L 8 -8"
+          stroke="#9F3D38"
+          stroke-width="1"
+          fill="none"
+          opacity="0.5"
+        />
+      </g>
+    
+  
+        <!-- divider -->
+        <g class="au-footer-divider">
+          <line
+            x1="245"
+            y1="44"
+            x2="380"
+            y2="44"
+            stroke="#D96B3B"
+            stroke-width="1"
+            opacity="0.55"
+          />
+  
+          <path
+            d="
+              M 400 36
+              L 404 42
+              L 411 44
+              L 404 47
+              L 400 54
+              L 396 47
+              L 389 44
+              L 396 42
+              Z
+            "
+            fill="#FFE0A3"
+          />
+  
+          <line
+            x1="420"
+            y1="44"
+            x2="555"
+            y2="44"
+            stroke="#D96B3B"
+            stroke-width="1"
+            opacity="0.55"
+          />
+        </g>
+  
+        <text
+          class="au-footer-eyebrow"
+          x="400"
+          y="78"
+          text-anchor="middle"
+          fill="#D96B3B"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="11"
+          letter-spacing="4"
+        >THANKS FOR STOPPING BY</text>
+  
+        <text
+          class="au-footer-name"
+          x="400"
+          y="116"
+          text-anchor="middle"
+          fill="#fff1dc"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="29"
+          font-weight="600"
+          letter-spacing="1"
+        >QyTruong</text>
+  
+        <text
+          class="au-footer-socials"
+          x="400"
+          y="145"
+          text-anchor="middle"
+          fill="#765D5A"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="10"
+          letter-spacing="1.8"
+        >GITHUB     •     LINKEDIN</text>
+  
+        <text
+          class="au-footer-credit"
+          x="400"
+          y="171"
+          text-anchor="middle"
+          fill="#765D5A"
+          fill-opacity="0.7"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="8"
+          letter-spacing="3"
+        >AUTUMN JOURNEY · RYME.MD</text>
+  
+        <!-- foreground leaves -->
+        
+      <g
+        transform="
+          translate(28 183)
+          rotate(-20)
+          scale(0.42)
+        "
+        opacity="0.72"
+      >
+        <path
+          d="
+            M 0 -18
+            L 5 -10
+            L 14 -13
+            L 10 -4
+            L 19 0
+            L 10 4
+            L 14 13
+            L 5 10
+            L 2 21
+            L 0 11
+            L -2 21
+            L -5 10
+            L -14 13
+            L -10 4
+            L -19 0
+            L -10 -4
+            L -14 -13
+            L -5 -10
+            Z
+          "
+          fill="#E9783D"
+        />
+  
+        <path
+          d="M 0 -11 L 0 14 M 0 -3 L -8 -8 M 0 -3 L 8 -8"
+          stroke="#9F3D38"
+          stroke-width="1"
+          fill="none"
+          opacity="0.5"
+        />
+      </g>
+    
+        
+      <g
+        transform="
+          translate(770 180)
+          rotate(25)
+          scale(0.48)
+        "
+        opacity="0.7"
+      >
+        <path
+          d="
+            M 0 -18
+            L 5 -10
+            L 14 -13
+            L 10 -4
+            L 19 0
+            L 10 4
+            L 14 13
+            L 5 10
+            L 2 21
+            L 0 11
+            L -2 21
+            L -5 10
+            L -14 13
+            L -10 4
+            L -19 0
+            L -10 -4
+            L -14 -13
+            L -5 -10
+            Z
+          "
+          fill="#D94F45"
+        />
+  
+        <path
+          d="M 0 -11 L 0 14 M 0 -3 L -8 -8 M 0 -3 L 8 -8"
+          stroke="#9F3D38"
+          stroke-width="1"
+          fill="none"
+          opacity="0.5"
+        />
+      </g>
+    
+      </svg>
+    

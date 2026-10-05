@@ -1,0 +1,1617 @@
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="800"
+        height="300"
+        viewBox="0 0 800 300"
+      >
+        <style>
+      @keyframes auAboutLeafFall {
+        0% {
+          transform:
+            translate(var(--x), calc(var(--y) - 90px))
+            rotate(var(--r))
+            scale(var(--s));
+        }
+  
+        50% {
+          transform:
+            translate(
+              calc(var(--x) + 24px),
+              calc(var(--y) + 70px)
+            )
+            rotate(calc(var(--r) + 160deg))
+            scale(var(--s));
+        }
+  
+        100% {
+          transform:
+            translate(
+              calc(var(--x) - 35px),
+              calc(var(--y) + 280px)
+            )
+            rotate(calc(var(--r) + 340deg))
+            scale(var(--s));
+        }
+      }
+  
+      @keyframes auAboutReveal {
+        0%, 12% {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+  
+        22%, 82% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+  
+        94%, 100% {
+          opacity: 0;
+          transform: translateY(-5px);
+        }
+      }
+  
+      @keyframes auAboutGlow {
+        0%, 100% {
+          opacity: 0.45;
+        }
+  
+        50% {
+          opacity: 0.75;
+        }
+      }
+  
+      .au-about-leaf {
+        animation:
+          auAboutLeafFall
+          17s
+          linear
+          infinite;
+      }
+  
+      .au-about-sun {
+        animation:
+          auAboutGlow
+          15s
+          ease-in-out
+          infinite;
+      }
+  
+      
+        .au-about-title {
+          animation: auAboutReveal 15s ease-out infinite;
+        }
+  
+        .au-about-bio {
+          animation: auAboutReveal 15s ease-out infinite;
+        }
+  
+        .au-about-bio-1 {
+          animation-delay: 0.60s;
+        }
+  
+        .au-about-bio-2 {
+          animation-delay: 1.20s;
+        }
+  
+        .au-about-bio-3 {
+          animation-delay: 1.80s;
+        }
+  
+        .au-about-meta {
+          animation: auAboutReveal 15s ease-out infinite;
+          animation-delay: 3.00s;
+        }
+      
+    </style>
+  
+        <defs>
+          <linearGradient id="auAboutSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#BFE3F2"/>
+            <stop offset="55%" stop-color="#F4D9BB"/>
+            <stop offset="100%" stop-color="#F2B17F"/>
+          </linearGradient>
+  
+          <radialGradient id="auAboutSun">
+            <stop offset="0%" stop-color="#FFF0B0" stop-opacity="0.95"/>
+            <stop offset="45%" stop-color="#FFD27A" stop-opacity="0.5"/>
+            <stop offset="100%" stop-color="#FFD27A" stop-opacity="0"/>
+          </radialGradient>
+  
+          <linearGradient id="auAboutMountain" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#D9A18A"/>
+            <stop offset="100%" stop-color="#BE8173"/>
+          </linearGradient>
+        </defs>
+  
+        <rect width="800" height="300" fill="url(#auAboutSky)"/>
+  
+        <circle
+          class="au-about-sun"
+          cx="650"
+          cy="82"
+          r="88"
+          fill="url(#auAboutSun)"
+        />
+  
+        <circle
+          cx="650"
+          cy="82"
+          r="25"
+          fill="#FFF0B0"
+          opacity="0.55"
+        />
+  
+        <!-- distant mountains -->
+        <path
+          d="
+            M 0 206
+            Q 80 166 145 194
+            Q 220 145 290 193
+            Q 370 142 450 192
+            Q 540 150 620 191
+            Q 710 150 800 194
+            L 800 300
+            L 0 300 Z
+          "
+          fill="#D9A18A"
+          opacity="0.58"
+        />
+  
+        <!-- middle mountains -->
+        <path
+          d="
+            M 0 236
+            Q 100 190 185 224
+            Q 280 172 370 225
+            Q 470 178 555 224
+            Q 670 180 800 224
+            L 800 300
+            L 0 300 Z
+          "
+          fill="#BE8173"
+          opacity="0.48"
+        />
+  
+        <!-- foreground mountain -->
+        <path
+          d="
+            M 0 260
+            Q 110 218 220 253
+            Q 340 204 450 254
+            Q 580 212 680 251
+            Q 745 226 800 248
+            L 800 300
+            L 0 300 Z
+          "
+          fill="#956762"
+          opacity="0.22"
+        />
+  
+        <!-- atmospheric haze -->
+        <rect
+          x="0"
+          y="185"
+          width="800"
+          height="65"
+          fill="#FFF0B0"
+          opacity="0.08"
+        />
+  
+        <!-- falling momiji -->
+        
+        <g class="au-about-leaf au-about-leaf-0"
+           style="
+             --x:414.8px;
+             --y:147.2px;
+             --r:316.4deg;
+             --s:0.782;
+           ">
+          
+      <g transform="translate(0.0 0.0) rotate(0.0) scale(1.000)"
+         opacity="0.76">
+        <path
+          d="
+            M 0 -20
+            L 5 -11
+            L 14 -14
+            L 10 -5
+            L 20 0
+            L 10 4
+            L 14 14
+            L 5 10
+            L 2 22
+            L 0 12
+            L -2 22
+            L -5 10
+            L -14 14
+            L -10 4
+            L -20 0
+            L -10 -5
+            L -14 -14
+            L -5 -11
+            Z
+          "
+          fill="#D94F45"
+        />
+        <path
+          d="M 0 -12 L 0 15 M 0 -4 L -8 -9 M 0 -4 L 8 -9 M 0 3 L -9 7 M 0 3 L 9 7"
+          fill="none"
+          stroke="#9F3D38"
+          stroke-width="1"
+          opacity="0.55"
+          stroke-linecap="round"
+        />
+      </g>
+    
+        </g>
+      
+
+        <g class="au-about-leaf au-about-leaf-1"
+           style="
+             --x:236.7px;
+             --y:240.0px;
+             --r:331.6deg;
+             --s:0.361;
+           ">
+          
+      <g transform="translate(0.0 0.0) rotate(0.0) scale(1.000)"
+         opacity="0.62">
+        <path
+          d="
+            M 0 -20
+            L 5 -11
+            L 14 -14
+            L 10 -5
+            L 20 0
+            L 10 4
+            L 14 14
+            L 5 10
+            L 2 22
+            L 0 12
+            L -2 22
+            L -5 10
+            L -14 14
+            L -10 4
+            L -20 0
+            L -10 -5
+            L -14 -14
+            L -5 -11
+            Z
+          "
+          fill="#F2B84B"
+        />
+        <path
+          d="M 0 -12 L 0 15 M 0 -4 L -8 -9 M 0 -4 L 8 -9 M 0 3 L -9 7 M 0 3 L 9 7"
+          fill="none"
+          stroke="#C98B28"
+          stroke-width="1"
+          opacity="0.55"
+          stroke-linecap="round"
+        />
+      </g>
+    
+        </g>
+      
+
+        <g class="au-about-leaf au-about-leaf-2"
+           style="
+             --x:356.4px;
+             --y:200.1px;
+             --r:24.9deg;
+             --s:0.665;
+           ">
+          
+      <g transform="translate(0.0 0.0) rotate(0.0) scale(1.000)"
+         opacity="0.74">
+        <path
+          d="
+            M 0 -20
+            L 5 -11
+            L 14 -14
+            L 10 -5
+            L 20 0
+            L 10 4
+            L 14 14
+            L 5 10
+            L 2 22
+            L 0 12
+            L -2 22
+            L -5 10
+            L -14 14
+            L -10 4
+            L -20 0
+            L -10 -5
+            L -14 -14
+            L -5 -11
+            Z
+          "
+          fill="#B83E3A"
+        />
+        <path
+          d="M 0 -12 L 0 15 M 0 -4 L -8 -9 M 0 -4 L 8 -9 M 0 3 L -9 7 M 0 3 L 9 7"
+          fill="none"
+          stroke="#9F3D38"
+          stroke-width="1"
+          opacity="0.55"
+          stroke-linecap="round"
+        />
+      </g>
+    
+        </g>
+      
+
+        <g class="au-about-leaf au-about-leaf-3"
+           style="
+             --x:140.9px;
+             --y:237.0px;
+             --r:281.3deg;
+             --s:0.847;
+           ">
+          
+      <g transform="translate(0.0 0.0) rotate(0.0) scale(1.000)"
+         opacity="0.71">
+        <path
+          d="
+            M 0 -20
+            L 5 -11
+            L 14 -14
+            L 10 -5
+            L 20 0
+            L 10 4
+            L 14 14
+            L 5 10
+            L 2 22
+            L 0 12
+            L -2 22
+            L -5 10
+            L -14 14
+            L -10 4
+            L -20 0
+            L -10 -5
+            L -14 -14
+            L -5 -11
+            Z
+          "
+          fill="#F2B84B"
+        />
+        <path
+          d="M 0 -12 L 0 15 M 0 -4 L -8 -9 M 0 -4 L 8 -9 M 0 3 L -9 7 M 0 3 L 9 7"
+          fill="none"
+          stroke="#C98B28"
+          stroke-width="1"
+          opacity="0.55"
+          stroke-linecap="round"
+        />
+      </g>
+    
+        </g>
+      
+
+        <g class="au-about-leaf au-about-leaf-4"
+           style="
+             --x:595.7px;
+             --y:154.3px;
+             --r:5.2deg;
+             --s:0.473;
+           ">
+          
+      <g transform="translate(0.0 0.0) rotate(0.0) scale(1.000)"
+         opacity="0.84">
+        <path
+          d="
+            M 0 -20
+            L 5 -11
+            L 14 -14
+            L 10 -5
+            L 20 0
+            L 10 4
+            L 14 14
+            L 5 10
+            L 2 22
+            L 0 12
+            L -2 22
+            L -5 10
+            L -14 14
+            L -10 4
+            L -20 0
+            L -10 -5
+            L -14 -14
+            L -5 -11
+            Z
+          "
+          fill="#E9783D"
+        />
+        <path
+          d="M 0 -12 L 0 15 M 0 -4 L -8 -9 M 0 -4 L 8 -9 M 0 3 L -9 7 M 0 3 L 9 7"
+          fill="none"
+          stroke="#9F3D38"
+          stroke-width="1"
+          opacity="0.55"
+          stroke-linecap="round"
+        />
+      </g>
+    
+        </g>
+      
+
+        <g class="au-about-leaf au-about-leaf-5"
+           style="
+             --x:78.4px;
+             --y:33.9px;
+             --r:249.9deg;
+             --s:0.886;
+           ">
+          
+      <g transform="translate(0.0 0.0) rotate(0.0) scale(1.000)"
+         opacity="0.73">
+        <path
+          d="
+            M 0 -20
+            L 5 -11
+            L 14 -14
+            L 10 -5
+            L 20 0
+            L 10 4
+            L 14 14
+            L 5 10
+            L 2 22
+            L 0 12
+            L -2 22
+            L -5 10
+            L -14 14
+            L -10 4
+            L -20 0
+            L -10 -5
+            L -14 -14
+            L -5 -11
+            Z
+          "
+          fill="#E9783D"
+        />
+        <path
+          d="M 0 -12 L 0 15 M 0 -4 L -8 -9 M 0 -4 L 8 -9 M 0 3 L -9 7 M 0 3 L 9 7"
+          fill="none"
+          stroke="#9F3D38"
+          stroke-width="1"
+          opacity="0.55"
+          stroke-linecap="round"
+        />
+      </g>
+    
+        </g>
+      
+
+        <g class="au-about-leaf au-about-leaf-6"
+           style="
+             --x:398.4px;
+             --y:79.8px;
+             --r:162.1deg;
+             --s:0.794;
+           ">
+          
+      <g transform="translate(0.0 0.0) rotate(0.0) scale(1.000)"
+         opacity="0.52">
+        <path
+          d="
+            M 0 -20
+            L 5 -11
+            L 14 -14
+            L 10 -5
+            L 20 0
+            L 10 4
+            L 14 14
+            L 5 10
+            L 2 22
+            L 0 12
+            L -2 22
+            L -5 10
+            L -14 14
+            L -10 4
+            L -20 0
+            L -10 -5
+            L -14 -14
+            L -5 -11
+            Z
+          "
+          fill="#F2B84B"
+        />
+        <path
+          d="M 0 -12 L 0 15 M 0 -4 L -8 -9 M 0 -4 L 8 -9 M 0 3 L -9 7 M 0 3 L 9 7"
+          fill="none"
+          stroke="#C98B28"
+          stroke-width="1"
+          opacity="0.55"
+          stroke-linecap="round"
+        />
+      </g>
+    
+        </g>
+      
+
+        <g class="au-about-leaf au-about-leaf-7"
+           style="
+             --x:299.5px;
+             --y:81.4px;
+             --r:294.0deg;
+             --s:0.457;
+           ">
+          
+      <g transform="translate(0.0 0.0) rotate(0.0) scale(1.000)"
+         opacity="0.53">
+        <path
+          d="
+            M 0 -20
+            L 5 -11
+            L 14 -14
+            L 10 -5
+            L 20 0
+            L 10 4
+            L 14 14
+            L 5 10
+            L 2 22
+            L 0 12
+            L -2 22
+            L -5 10
+            L -14 14
+            L -10 4
+            L -20 0
+            L -10 -5
+            L -14 -14
+            L -5 -11
+            Z
+          "
+          fill="#F2B84B"
+        />
+        <path
+          d="M 0 -12 L 0 15 M 0 -4 L -8 -9 M 0 -4 L 8 -9 M 0 3 L -9 7 M 0 3 L 9 7"
+          fill="none"
+          stroke="#C98B28"
+          stroke-width="1"
+          opacity="0.55"
+          stroke-linecap="round"
+        />
+      </g>
+    
+        </g>
+      
+
+        <g class="au-about-leaf au-about-leaf-8"
+           style="
+             --x:314.8px;
+             --y:152.1px;
+             --r:86.0deg;
+             --s:0.496;
+           ">
+          
+      <g transform="translate(0.0 0.0) rotate(0.0) scale(1.000)"
+         opacity="0.83">
+        <path
+          d="
+            M 0 -20
+            L 5 -11
+            L 14 -14
+            L 10 -5
+            L 20 0
+            L 10 4
+            L 14 14
+            L 5 10
+            L 2 22
+            L 0 12
+            L -2 22
+            L -5 10
+            L -14 14
+            L -10 4
+            L -20 0
+            L -10 -5
+            L -14 -14
+            L -5 -11
+            Z
+          "
+          fill="#F2B84B"
+        />
+        <path
+          d="M 0 -12 L 0 15 M 0 -4 L -8 -9 M 0 -4 L 8 -9 M 0 3 L -9 7 M 0 3 L 9 7"
+          fill="none"
+          stroke="#C98B28"
+          stroke-width="1"
+          opacity="0.55"
+          stroke-linecap="round"
+        />
+      </g>
+    
+        </g>
+      
+
+        <g class="au-about-leaf au-about-leaf-9"
+           style="
+             --x:216.2px;
+             --y:90.0px;
+             --r:22.4deg;
+             --s:0.389;
+           ">
+          
+      <g transform="translate(0.0 0.0) rotate(0.0) scale(1.000)"
+         opacity="0.42">
+        <path
+          d="
+            M 0 -20
+            L 5 -11
+            L 14 -14
+            L 10 -5
+            L 20 0
+            L 10 4
+            L 14 14
+            L 5 10
+            L 2 22
+            L 0 12
+            L -2 22
+            L -5 10
+            L -14 14
+            L -10 4
+            L -20 0
+            L -10 -5
+            L -14 -14
+            L -5 -11
+            Z
+          "
+          fill="#D94F45"
+        />
+        <path
+          d="M 0 -12 L 0 15 M 0 -4 L -8 -9 M 0 -4 L 8 -9 M 0 3 L -9 7 M 0 3 L 9 7"
+          fill="none"
+          stroke="#9F3D38"
+          stroke-width="1"
+          opacity="0.55"
+          stroke-linecap="round"
+        />
+      </g>
+    
+        </g>
+      
+
+        <g class="au-about-leaf au-about-leaf-10"
+           style="
+             --x:37.9px;
+             --y:165.7px;
+             --r:170.5deg;
+             --s:0.768;
+           ">
+          
+      <g transform="translate(0.0 0.0) rotate(0.0) scale(1.000)"
+         opacity="0.51">
+        <path
+          d="
+            M 0 -20
+            L 5 -11
+            L 14 -14
+            L 10 -5
+            L 20 0
+            L 10 4
+            L 14 14
+            L 5 10
+            L 2 22
+            L 0 12
+            L -2 22
+            L -5 10
+            L -14 14
+            L -10 4
+            L -20 0
+            L -10 -5
+            L -14 -14
+            L -5 -11
+            Z
+          "
+          fill="#D94F45"
+        />
+        <path
+          d="M 0 -12 L 0 15 M 0 -4 L -8 -9 M 0 -4 L 8 -9 M 0 3 L -9 7 M 0 3 L 9 7"
+          fill="none"
+          stroke="#9F3D38"
+          stroke-width="1"
+          opacity="0.55"
+          stroke-linecap="round"
+        />
+      </g>
+    
+        </g>
+      
+
+        <g class="au-about-leaf au-about-leaf-11"
+           style="
+             --x:601.4px;
+             --y:37.0px;
+             --r:154.9deg;
+             --s:0.871;
+           ">
+          
+      <g transform="translate(0.0 0.0) rotate(0.0) scale(1.000)"
+         opacity="0.81">
+        <path
+          d="
+            M 0 -20
+            L 5 -11
+            L 14 -14
+            L 10 -5
+            L 20 0
+            L 10 4
+            L 14 14
+            L 5 10
+            L 2 22
+            L 0 12
+            L -2 22
+            L -5 10
+            L -14 14
+            L -10 4
+            L -20 0
+            L -10 -5
+            L -14 -14
+            L -5 -11
+            Z
+          "
+          fill="#F2B84B"
+        />
+        <path
+          d="M 0 -12 L 0 15 M 0 -4 L -8 -9 M 0 -4 L 8 -9 M 0 3 L -9 7 M 0 3 L 9 7"
+          fill="none"
+          stroke="#C98B28"
+          stroke-width="1"
+          opacity="0.55"
+          stroke-linecap="round"
+        />
+      </g>
+    
+        </g>
+      
+
+        <g class="au-about-leaf au-about-leaf-12"
+           style="
+             --x:721.6px;
+             --y:170.1px;
+             --r:62.9deg;
+             --s:0.629;
+           ">
+          
+      <g transform="translate(0.0 0.0) rotate(0.0) scale(1.000)"
+         opacity="0.60">
+        <path
+          d="
+            M 0 -20
+            L 5 -11
+            L 14 -14
+            L 10 -5
+            L 20 0
+            L 10 4
+            L 14 14
+            L 5 10
+            L 2 22
+            L 0 12
+            L -2 22
+            L -5 10
+            L -14 14
+            L -10 4
+            L -20 0
+            L -10 -5
+            L -14 -14
+            L -5 -11
+            Z
+          "
+          fill="#B83E3A"
+        />
+        <path
+          d="M 0 -12 L 0 15 M 0 -4 L -8 -9 M 0 -4 L 8 -9 M 0 3 L -9 7 M 0 3 L 9 7"
+          fill="none"
+          stroke="#9F3D38"
+          stroke-width="1"
+          opacity="0.55"
+          stroke-linecap="round"
+        />
+      </g>
+    
+        </g>
+      
+
+        <g class="au-about-leaf au-about-leaf-13"
+           style="
+             --x:439.6px;
+             --y:138.0px;
+             --r:347.1deg;
+             --s:0.918;
+           ">
+          
+      <g transform="translate(0.0 0.0) rotate(0.0) scale(1.000)"
+         opacity="0.63">
+        <path
+          d="
+            M 0 -20
+            L 5 -11
+            L 14 -14
+            L 10 -5
+            L 20 0
+            L 10 4
+            L 14 14
+            L 5 10
+            L 2 22
+            L 0 12
+            L -2 22
+            L -5 10
+            L -14 14
+            L -10 4
+            L -20 0
+            L -10 -5
+            L -14 -14
+            L -5 -11
+            Z
+          "
+          fill="#F2B84B"
+        />
+        <path
+          d="M 0 -12 L 0 15 M 0 -4 L -8 -9 M 0 -4 L 8 -9 M 0 3 L -9 7 M 0 3 L 9 7"
+          fill="none"
+          stroke="#C98B28"
+          stroke-width="1"
+          opacity="0.55"
+          stroke-linecap="round"
+        />
+      </g>
+    
+        </g>
+      
+
+        <g class="au-about-leaf au-about-leaf-14"
+           style="
+             --x:117.9px;
+             --y:68.0px;
+             --r:135.8deg;
+             --s:0.501;
+           ">
+          
+      <g transform="translate(0.0 0.0) rotate(0.0) scale(1.000)"
+         opacity="0.51">
+        <path
+          d="
+            M 0 -20
+            L 5 -11
+            L 14 -14
+            L 10 -5
+            L 20 0
+            L 10 4
+            L 14 14
+            L 5 10
+            L 2 22
+            L 0 12
+            L -2 22
+            L -5 10
+            L -14 14
+            L -10 4
+            L -20 0
+            L -10 -5
+            L -14 -14
+            L -5 -11
+            Z
+          "
+          fill="#E9783D"
+        />
+        <path
+          d="M 0 -12 L 0 15 M 0 -4 L -8 -9 M 0 -4 L 8 -9 M 0 3 L -9 7 M 0 3 L 9 7"
+          fill="none"
+          stroke="#9F3D38"
+          stroke-width="1"
+          opacity="0.55"
+          stroke-linecap="round"
+        />
+      </g>
+    
+        </g>
+      
+
+        <g class="au-about-leaf au-about-leaf-15"
+           style="
+             --x:159.1px;
+             --y:29.7px;
+             --r:171.5deg;
+             --s:0.509;
+           ">
+          
+      <g transform="translate(0.0 0.0) rotate(0.0) scale(1.000)"
+         opacity="0.63">
+        <path
+          d="
+            M 0 -20
+            L 5 -11
+            L 14 -14
+            L 10 -5
+            L 20 0
+            L 10 4
+            L 14 14
+            L 5 10
+            L 2 22
+            L 0 12
+            L -2 22
+            L -5 10
+            L -14 14
+            L -10 4
+            L -20 0
+            L -10 -5
+            L -14 -14
+            L -5 -11
+            Z
+          "
+          fill="#D94F45"
+        />
+        <path
+          d="M 0 -12 L 0 15 M 0 -4 L -8 -9 M 0 -4 L 8 -9 M 0 3 L -9 7 M 0 3 L 9 7"
+          fill="none"
+          stroke="#9F3D38"
+          stroke-width="1"
+          opacity="0.55"
+          stroke-linecap="round"
+        />
+      </g>
+    
+        </g>
+      
+
+        <g class="au-about-leaf au-about-leaf-16"
+           style="
+             --x:194.3px;
+             --y:139.8px;
+             --r:210.6deg;
+             --s:0.681;
+           ">
+          
+      <g transform="translate(0.0 0.0) rotate(0.0) scale(1.000)"
+         opacity="0.54">
+        <path
+          d="
+            M 0 -20
+            L 5 -11
+            L 14 -14
+            L 10 -5
+            L 20 0
+            L 10 4
+            L 14 14
+            L 5 10
+            L 2 22
+            L 0 12
+            L -2 22
+            L -5 10
+            L -14 14
+            L -10 4
+            L -20 0
+            L -10 -5
+            L -14 -14
+            L -5 -11
+            Z
+          "
+          fill="#B83E3A"
+        />
+        <path
+          d="M 0 -12 L 0 15 M 0 -4 L -8 -9 M 0 -4 L 8 -9 M 0 3 L -9 7 M 0 3 L 9 7"
+          fill="none"
+          stroke="#9F3D38"
+          stroke-width="1"
+          opacity="0.55"
+          stroke-linecap="round"
+        />
+      </g>
+    
+        </g>
+      
+
+        <g class="au-about-leaf au-about-leaf-17"
+           style="
+             --x:393.3px;
+             --y:149.6px;
+             --r:27.9deg;
+             --s:0.361;
+           ">
+          
+      <g transform="translate(0.0 0.0) rotate(0.0) scale(1.000)"
+         opacity="0.40">
+        <path
+          d="
+            M 0 -20
+            L 5 -11
+            L 14 -14
+            L 10 -5
+            L 20 0
+            L 10 4
+            L 14 14
+            L 5 10
+            L 2 22
+            L 0 12
+            L -2 22
+            L -5 10
+            L -14 14
+            L -10 4
+            L -20 0
+            L -10 -5
+            L -14 -14
+            L -5 -11
+            Z
+          "
+          fill="#B83E3A"
+        />
+        <path
+          d="M 0 -12 L 0 15 M 0 -4 L -8 -9 M 0 -4 L 8 -9 M 0 3 L -9 7 M 0 3 L 9 7"
+          fill="none"
+          stroke="#9F3D38"
+          stroke-width="1"
+          opacity="0.55"
+          stroke-linecap="round"
+        />
+      </g>
+    
+        </g>
+      
+
+        <g class="au-about-leaf au-about-leaf-18"
+           style="
+             --x:258.5px;
+             --y:230.8px;
+             --r:338.7deg;
+             --s:0.704;
+           ">
+          
+      <g transform="translate(0.0 0.0) rotate(0.0) scale(1.000)"
+         opacity="0.42">
+        <path
+          d="
+            M 0 -20
+            L 5 -11
+            L 14 -14
+            L 10 -5
+            L 20 0
+            L 10 4
+            L 14 14
+            L 5 10
+            L 2 22
+            L 0 12
+            L -2 22
+            L -5 10
+            L -14 14
+            L -10 4
+            L -20 0
+            L -10 -5
+            L -14 -14
+            L -5 -11
+            Z
+          "
+          fill="#E9783D"
+        />
+        <path
+          d="M 0 -12 L 0 15 M 0 -4 L -8 -9 M 0 -4 L 8 -9 M 0 3 L -9 7 M 0 3 L 9 7"
+          fill="none"
+          stroke="#9F3D38"
+          stroke-width="1"
+          opacity="0.55"
+          stroke-linecap="round"
+        />
+      </g>
+    
+        </g>
+      
+
+        <g class="au-about-leaf au-about-leaf-19"
+           style="
+             --x:392.4px;
+             --y:69.4px;
+             --r:117.6deg;
+             --s:0.728;
+           ">
+          
+      <g transform="translate(0.0 0.0) rotate(0.0) scale(1.000)"
+         opacity="0.57">
+        <path
+          d="
+            M 0 -20
+            L 5 -11
+            L 14 -14
+            L 10 -5
+            L 20 0
+            L 10 4
+            L 14 14
+            L 5 10
+            L 2 22
+            L 0 12
+            L -2 22
+            L -5 10
+            L -14 14
+            L -10 4
+            L -20 0
+            L -10 -5
+            L -14 -14
+            L -5 -11
+            Z
+          "
+          fill="#E9783D"
+        />
+        <path
+          d="M 0 -12 L 0 15 M 0 -4 L -8 -9 M 0 -4 L 8 -9 M 0 3 L -9 7 M 0 3 L 9 7"
+          fill="none"
+          stroke="#9F3D38"
+          stroke-width="1"
+          opacity="0.55"
+          stroke-linecap="round"
+        />
+      </g>
+    
+        </g>
+      
+
+        <g class="au-about-leaf au-about-leaf-20"
+           style="
+             --x:358.7px;
+             --y:171.7px;
+             --r:187.8deg;
+             --s:0.774;
+           ">
+          
+      <g transform="translate(0.0 0.0) rotate(0.0) scale(1.000)"
+         opacity="0.56">
+        <path
+          d="
+            M 0 -20
+            L 5 -11
+            L 14 -14
+            L 10 -5
+            L 20 0
+            L 10 4
+            L 14 14
+            L 5 10
+            L 2 22
+            L 0 12
+            L -2 22
+            L -5 10
+            L -14 14
+            L -10 4
+            L -20 0
+            L -10 -5
+            L -14 -14
+            L -5 -11
+            Z
+          "
+          fill="#D94F45"
+        />
+        <path
+          d="M 0 -12 L 0 15 M 0 -4 L -8 -9 M 0 -4 L 8 -9 M 0 3 L -9 7 M 0 3 L 9 7"
+          fill="none"
+          stroke="#9F3D38"
+          stroke-width="1"
+          opacity="0.55"
+          stroke-linecap="round"
+        />
+      </g>
+    
+        </g>
+      
+
+        <g class="au-about-leaf au-about-leaf-21"
+           style="
+             --x:615.9px;
+             --y:103.1px;
+             --r:10.7deg;
+             --s:0.370;
+           ">
+          
+      <g transform="translate(0.0 0.0) rotate(0.0) scale(1.000)"
+         opacity="0.51">
+        <path
+          d="
+            M 0 -20
+            L 5 -11
+            L 14 -14
+            L 10 -5
+            L 20 0
+            L 10 4
+            L 14 14
+            L 5 10
+            L 2 22
+            L 0 12
+            L -2 22
+            L -5 10
+            L -14 14
+            L -10 4
+            L -20 0
+            L -10 -5
+            L -14 -14
+            L -5 -11
+            Z
+          "
+          fill="#F2B84B"
+        />
+        <path
+          d="M 0 -12 L 0 15 M 0 -4 L -8 -9 M 0 -4 L 8 -9 M 0 3 L -9 7 M 0 3 L 9 7"
+          fill="none"
+          stroke="#C98B28"
+          stroke-width="1"
+          opacity="0.55"
+          stroke-linecap="round"
+        />
+      </g>
+    
+        </g>
+      
+
+        <g class="au-about-leaf au-about-leaf-22"
+           style="
+             --x:224.1px;
+             --y:238.2px;
+             --r:170.2deg;
+             --s:0.822;
+           ">
+          
+      <g transform="translate(0.0 0.0) rotate(0.0) scale(1.000)"
+         opacity="0.66">
+        <path
+          d="
+            M 0 -20
+            L 5 -11
+            L 14 -14
+            L 10 -5
+            L 20 0
+            L 10 4
+            L 14 14
+            L 5 10
+            L 2 22
+            L 0 12
+            L -2 22
+            L -5 10
+            L -14 14
+            L -10 4
+            L -20 0
+            L -10 -5
+            L -14 -14
+            L -5 -11
+            Z
+          "
+          fill="#F2B84B"
+        />
+        <path
+          d="M 0 -12 L 0 15 M 0 -4 L -8 -9 M 0 -4 L 8 -9 M 0 3 L -9 7 M 0 3 L 9 7"
+          fill="none"
+          stroke="#C98B28"
+          stroke-width="1"
+          opacity="0.55"
+          stroke-linecap="round"
+        />
+      </g>
+    
+        </g>
+      
+
+        <g class="au-about-leaf au-about-leaf-23"
+           style="
+             --x:528.6px;
+             --y:137.1px;
+             --r:236.5deg;
+             --s:0.720;
+           ">
+          
+      <g transform="translate(0.0 0.0) rotate(0.0) scale(1.000)"
+         opacity="0.51">
+        <path
+          d="
+            M 0 -20
+            L 5 -11
+            L 14 -14
+            L 10 -5
+            L 20 0
+            L 10 4
+            L 14 14
+            L 5 10
+            L 2 22
+            L 0 12
+            L -2 22
+            L -5 10
+            L -14 14
+            L -10 4
+            L -20 0
+            L -10 -5
+            L -14 -14
+            L -5 -11
+            Z
+          "
+          fill="#E9783D"
+        />
+        <path
+          d="M 0 -12 L 0 15 M 0 -4 L -8 -9 M 0 -4 L 8 -9 M 0 3 L -9 7 M 0 3 L 9 7"
+          fill="none"
+          stroke="#9F3D38"
+          stroke-width="1"
+          opacity="0.55"
+          stroke-linecap="round"
+        />
+      </g>
+    
+        </g>
+      
+
+        <g class="au-about-leaf au-about-leaf-24"
+           style="
+             --x:787.9px;
+             --y:164.2px;
+             --r:184.6deg;
+             --s:0.628;
+           ">
+          
+      <g transform="translate(0.0 0.0) rotate(0.0) scale(1.000)"
+         opacity="0.71">
+        <path
+          d="
+            M 0 -20
+            L 5 -11
+            L 14 -14
+            L 10 -5
+            L 20 0
+            L 10 4
+            L 14 14
+            L 5 10
+            L 2 22
+            L 0 12
+            L -2 22
+            L -5 10
+            L -14 14
+            L -10 4
+            L -20 0
+            L -10 -5
+            L -14 -14
+            L -5 -11
+            Z
+          "
+          fill="#B83E3A"
+        />
+        <path
+          d="M 0 -12 L 0 15 M 0 -4 L -8 -9 M 0 -4 L 8 -9 M 0 3 L -9 7 M 0 3 L 9 7"
+          fill="none"
+          stroke="#9F3D38"
+          stroke-width="1"
+          opacity="0.55"
+          stroke-linecap="round"
+        />
+      </g>
+    
+        </g>
+      
+
+        <g class="au-about-leaf au-about-leaf-25"
+           style="
+             --x:26.8px;
+             --y:92.5px;
+             --r:252.0deg;
+             --s:0.558;
+           ">
+          
+      <g transform="translate(0.0 0.0) rotate(0.0) scale(1.000)"
+         opacity="0.49">
+        <path
+          d="
+            M 0 -20
+            L 5 -11
+            L 14 -14
+            L 10 -5
+            L 20 0
+            L 10 4
+            L 14 14
+            L 5 10
+            L 2 22
+            L 0 12
+            L -2 22
+            L -5 10
+            L -14 14
+            L -10 4
+            L -20 0
+            L -10 -5
+            L -14 -14
+            L -5 -11
+            Z
+          "
+          fill="#D94F45"
+        />
+        <path
+          d="M 0 -12 L 0 15 M 0 -4 L -8 -9 M 0 -4 L 8 -9 M 0 3 L -9 7 M 0 3 L 9 7"
+          fill="none"
+          stroke="#9F3D38"
+          stroke-width="1"
+          opacity="0.55"
+          stroke-linecap="round"
+        />
+      </g>
+    
+        </g>
+      
+  
+        <!-- title -->
+        <g class="au-about-title">
+          <circle cx="53" cy="64" r="4" fill="#D96B3B"/>
+          <text
+            x="66"
+            y="69"
+            fill="#D96B3B"
+            font-family="Georgia, 'Times New Roman', serif"
+            font-size="12"
+            letter-spacing="4"
+          >ABOUT ME</text>
+        </g>
+  
+        <rect
+          x="48"
+          y="82"
+          width="135"
+          height="1.5"
+          rx="1"
+          fill="#D96B3B"
+          opacity="0.55"
+        />
+  
+        <!-- bio -->
+        
+          <text
+            class="au-about-bio au-about-bio-0"
+            x="48"
+            y="128"
+            fill="#4B3835"
+            font-family="Georgia, 'Times New Roman', serif"
+            font-size="15"
+          >Hi, I&apos;m just a traveller seeking a particular hoppy on tech</text>
+        
+
+          <text
+            class="au-about-bio au-about-bio-1"
+            x="48"
+            y="154"
+            fill="#4B3835"
+            font-family="Georgia, 'Times New Roman', serif"
+            font-size="15"
+          >learning journey!</text>
+        
+  
+        <!-- metadata -->
+        
+        <text
+          class="au-about-meta"
+          x="48"
+          y="262"
+          fill="#5A4540"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="11"
+          letter-spacing="1.5"
+        >SOFTWARE ENGINEER</text>
+      
+  
+        <!-- decorative branch -->
+        <g opacity="0.75">
+          <path
+            d="M 742 0 Q 725 48 755 78 Q 775 98 800 106"
+            fill="none"
+            stroke="#B83E3A"
+            stroke-width="4"
+            stroke-linecap="round"
+          />
+  
+          
+      <g transform="translate(728.0 35.0) rotate(-25.0) scale(0.550)"
+         opacity="0.90">
+        <path
+          d="
+            M 0 -20
+            L 5 -11
+            L 14 -14
+            L 10 -5
+            L 20 0
+            L 10 4
+            L 14 14
+            L 5 10
+            L 2 22
+            L 0 12
+            L -2 22
+            L -5 10
+            L -14 14
+            L -10 4
+            L -20 0
+            L -10 -5
+            L -14 -14
+            L -5 -11
+            Z
+          "
+          fill="#D94F45"
+        />
+        <path
+          d="M 0 -12 L 0 15 M 0 -4 L -8 -9 M 0 -4 L 8 -9 M 0 3 L -9 7 M 0 3 L 9 7"
+          fill="none"
+          stroke="#9F3D38"
+          stroke-width="1"
+          opacity="0.55"
+          stroke-linecap="round"
+        />
+      </g>
+    
+          
+      <g transform="translate(758.0 73.0) rotate(20.0) scale(0.480)"
+         opacity="0.85">
+        <path
+          d="
+            M 0 -20
+            L 5 -11
+            L 14 -14
+            L 10 -5
+            L 20 0
+            L 10 4
+            L 14 14
+            L 5 10
+            L 2 22
+            L 0 12
+            L -2 22
+            L -5 10
+            L -14 14
+            L -10 4
+            L -20 0
+            L -10 -5
+            L -14 -14
+            L -5 -11
+            Z
+          "
+          fill="#E9783D"
+        />
+        <path
+          d="M 0 -12 L 0 15 M 0 -4 L -8 -9 M 0 -4 L 8 -9 M 0 3 L -9 7 M 0 3 L 9 7"
+          fill="none"
+          stroke="#9F3D38"
+          stroke-width="1"
+          opacity="0.55"
+          stroke-linecap="round"
+        />
+      </g>
+    
+          
+      <g transform="translate(785.0 104.0) rotate(-15.0) scale(0.420)"
+         opacity="0.85">
+        <path
+          d="
+            M 0 -20
+            L 5 -11
+            L 14 -14
+            L 10 -5
+            L 20 0
+            L 10 4
+            L 14 14
+            L 5 10
+            L 2 22
+            L 0 12
+            L -2 22
+            L -5 10
+            L -14 14
+            L -10 4
+            L -20 0
+            L -10 -5
+            L -14 -14
+            L -5 -11
+            Z
+          "
+          fill="#F2B84B"
+        />
+        <path
+          d="M 0 -12 L 0 15 M 0 -4 L -8 -9 M 0 -4 L 8 -9 M 0 3 L -9 7 M 0 3 L 9 7"
+          fill="none"
+          stroke="#C98B28"
+          stroke-width="1"
+          opacity="0.55"
+          stroke-linecap="round"
+        />
+      </g>
+    
+        </g>
+  
+        <rect
+          x="0"
+          y="0"
+          width="800"
+          height="300"
+          fill="none"
+          stroke="#FFF0B0"
+          stroke-opacity="0.18"
+        />
+      </svg>
+    
