@@ -5,7 +5,5 @@
 
 <img src="https://raw.githubusercontent.com/QyTruong/QyTruong/refs/heads/main/assests/skills.svg" width="800">
 
-<img src="https://raw.githubusercontent.com/QyTruong/QyTruong/refs/heads/main/assests/gh-stats.svg" width="800">
-
 <img src="https://raw.githubusercontent.com/QyTruong/QyTruong/refs/heads/main/assests/footer.svg" width="800">
 </div>
